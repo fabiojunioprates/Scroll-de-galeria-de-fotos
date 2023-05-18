@@ -8,6 +8,7 @@ body{
   height: 300px;
   overflow-x: scroll;
   white-space: nowrap;
+  position: relative;
 }
 
 .gallery img {
@@ -15,4 +16,9 @@ body{
   height: 200px;
   display: inline-block;
   margin-right: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.gallery img.active {
+  opacity: 1;
 }
